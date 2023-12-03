@@ -1,0 +1,792 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    font-family: Open Sans, Arial, sans-serif;
+    color: #000;
+    font-size: 62.5%;
+  }
+  
+  body {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .wrapper, .contaner, ol, li, header, footer {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 320px;
+    width: 100%;
+  }
+  section, article, .footer_group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contaner {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  
+  ol, header, footer, article {
+    flex-direction: column;
+  }
+  
+  header, footer {
+    min-height: 100vh;
+    color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: #0a0e34;
+    background-size: cover;
+  }
+  
+  .icon {
+    fill: white;
+    align-self: center;
+  }
+  
+  .buttons {
+    display: flex;
+    margin: 6rem 0;
+  } 
+  
+  .button {
+    background: #5c42b0;
+    box-shadow: 0 25px 20px -5px #0A0C31;
+    color: white;
+    border-radius: 40px;
+    margin-top: 15px;
+    padding: 5px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+   }
+  
+  .button span {
+    margin-left: 1em;
+  }
+  
+  .num_big {
+    background: #5c42b0;
+    color: white;
+    font-weight: 700;
+    display: flex;
+    z-index: 1;
+  }
+  
+  .num_big span {
+    margin: auto;
+    font-weight: 700;
+    position: relative;
+  }
+  
+  .num_big span:after {
+    position: absolute;
+    background-color: #917bce;
+    content: "";
+    width: 100%;
+    height: 5px;
+    border-radius: 2px;
+    bottom: -5px;
+    left: 0;
+  }
+  h4 span{
+    position: relative;
+    font-size: 0.5em;
+    color: #000;
+    vertical-align: top;
+    margin-right: 0.8em;
+    vertical-align: top;
+    padding-top: calc(1em/2);
+  }
+  
+  .players .growth span {
+    color: #A297CC;
+  }
+  
+  h4 span:after {
+    position: absolute;
+    background-color: #5f3cb6;
+    content: "";
+    width: 100%;
+    height: 5px;
+    border-radius: 2px;
+    bottom: -5px;
+    left: 0;
+  }
+  
+  .growth span:after {
+    background-color: #fff;
+  }
+  
+  .logo {
+    display: flex;
+    background: #5c42b0;
+    background: linear-gradient(to bottom, #7c58de, #493a8d);
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+  .logo svg {
+   margin: auto;
+  }
+  
+  .logo_text {
+    fill: white;
+    color: white;
+    margin: 1rem;
+  }
+  
+  footer .logo_text {
+    margin-top: auto;
+  }
+  
+  .athlets, .players {
+    position: relative;
+  }
+  
+  .athlets .growth {
+    background: #5c42b0;
+    color: white;
+  }
+  
+  .players .growth {
+    background: #151133;
+    color: white;
+  }
+  
+  .collaboration {
+    background: #F5F2F9;
+  }
+  
+  .connection {
+    background: #fafafa;
+  }
+  
+  h1, h2, h3, h4 {
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  
+  .button span, footer p {
+    text-transform: uppercase;
+  }
+  
+  h3, h4 {
+     color: #c1c1c1;
+     font-weight: 700;
+  }
+  
+  .athlets h3, .players h3 {
+    margin: 3rem;
+  }
+  
+  .todo h3 {
+    margin-top: 0.5em;
+  }
+  
+  ol {
+      padding-left: 0;
+      list-style-type: none; 
+      list-style-position: inside;
+      font-weight: 700;
+      margin: 0;
+  }
+  li, .todo article {
+    min-height: 180px;
+  }
+  
+  .picture {
+    background-color: rgba(10, 14, 52, 0.5);
+    overflow: hidden;
+    min-height: 50rem;
+  }
+  
+  article {
+    padding: 0 3rem;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  header article, footer article {
+    display: flex;
+    width: 98%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  h1 {
+    align-self: flex-start;
+    padding: 1rem 0.5em;
+   }
+  
+  header h2 {
+    align-self: flex-end;
+    margin-left: auto;
+  }
+  
+  .footer_group {
+   margin-top: auto;
+  }
+  
+  footer {
+    justify-content: center;
+  }
+  
+  footer article {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  
+  p {
+    margin-top: 1em;
+  }
+  footer p {
+    color: #917bce;
+    margin-top: 0;
+   }
+  
+  .button:hover {
+    background: #4d3191;
+    color: #bdace3;
+  }
+  
+  .button:hover .icon {
+    fill: #bdace3;
+  }
+  
+  .logo:hover {
+    background: #4d3191;
+    background: linear-gradient(to bottom, #592cc9, #3c2678);
+  }
+  
+  @media (min-width: 1921px) {
+    body {
+      margin: 0 auto;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    header {
+      background-image: url("https://github.com/natashta/dipom-MQ/blob/master/img/header_320.jpg?raw=true");
+      
+    }
+    footer {
+      background-image: url("https://github.com/natashta/dipom-MQ/blob/master/img/footer_320.jpg?raw=true");
+    }
+    .beactive .picture {
+      background: url("https://raw.githubusercontent.com/natashta/dipom-MQ/master/img/beactive_320.jpg") no-repeat center;
+    }
+    .contact .picture {
+      background: url("https://github.com/natashta/dipom-MQ/blob/master/img/contact_320.jpg?raw=true") no-repeat center;
+    }
+    .work .picture {
+      background: url("https://github.com/natashta/dipom-MQ/blob/master/img/work_320.jpg?raw=true") no-repeat center;
+    }
+    .picture {
+      min-height: 35rem;
+    }
+  }
+  
+  
+  @media (min-width: 321px) and (max-width: 768px) {
+    header {
+      background-image: url("https://github.com/natashta/dipom-MQ/blob/master/img/header_768.jpg?raw=true");
+    }
+    footer {
+      background-image: url("https://github.com/natashta/dipom-MQ/blob/master/img/footer_768.jpg?raw=true");
+    }
+    .beactive .picture {
+      background: url("https://github.com/natashta/dipom-MQ/blob/master/img/beactive_768.jpg?raw=true") no-repeat center;
+    }
+    .contact .picture {
+      background: url("https://github.com/natashta/dipom-MQ/blob/master/img/contact_768.jpg?raw=true") no-repeat center;
+    }
+    .work .picture {
+      background: url("https://github.com/natashta/dipom-MQ/blob/master/img/work_768.jpg?raw=true") no-repeat center;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    header {
+      background-image: url("https://github.com/natashta/dipom-MQ/blob/master/img/header_desktop.jpg?raw=true");
+    }
+    footer {
+      background-image: url("https://github.com/natashta/dipom-MQ/blob/master/img/footer_desktop.jpg?raw=true");
+    }
+    .beactive .picture {
+      background: url("https://github.com/natashta/dipom-MQ/blob/master/img/beactive_desktop.jpg?raw=true") no-repeat center;
+    }
+    .contact .picture {
+      background: url("https://github.com/natashta/dipom-MQ/blob/master/img/contact_desktop.jpg?raw=true") no-repeat center;
+    }
+    .work .picture {
+      background: url("https://github.com/natashta/dipom-MQ/blob/master/img/work_desktop.jpg?raw=true") no-repeat center;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .wrapper {
+      flex-direction: column;
+      align-items: center;
+  }
+    
+    header {
+      justify-content: space-around;
+    }
+    
+      .container {
+      flex-direction:column;
+      width: 100%;
+    }
+    
+    .buttons {
+      flex-flow: column wrap;
+      align-items: center;
+      width: 86%;
+    }
+    .button {
+      width: 100%;
+    }
+    
+  .button span {
+     font-size: 8px;
+  }
+  
+  .buttons svg {
+    width: 24px;
+    height: 24px;
+  }
+  
+    .logo_text {
+    width: 133px;
+    height: 36px;
+    }
+    
+    .logo {
+    width: 72px;
+    height: 72px; 
+    }
+    
+    .logo svg {
+    width: 56px;
+    height: 56px;
+  }
+    .footer_group {
+      flex-direction: column;
+      width: 90%;
+      align-items: center;
+      margin-top: 80px;
+  }
+  h3 {
+    font-size: 50px;
+  }
+  
+  h1, h2, .todo h3, h4 {
+    font-size: 28px;
+  }
+  
+  p {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  footer p {
+    font-size: 14px;
+  }
+  
+  header h2 {
+    max-width: 240px;
+  }
+    .athlets:before {
+    position: absolute;
+    z-index: 1;
+    content: "";
+    background: url("https://github.com/natashta/dipom-MQ/blob/master/img/athlete_320.png?raw=true") no-repeat center;
+    width: 80%;
+    height: 450px;
+    }
+    
+    .players:before {
+    position: absolute;
+    z-index: 1;
+    content: "";
+    background: url("https://github.com/natashta/dipom-MQ/blob/master/img/player_320.png?raw=true") no-repeat center;
+    width: 90%;
+    height: 420px;
+    }
+    
+  .athlets h3, .players h3 {
+    margin-top: 1rem;
+    margin-bottom: 230px;
+    align-self: flex-start;
+  }
+  .todo, .todo .contaner {
+    flex-direction: column;
+  }
+  .num_big {
+    margin-left: 2rem;
+    margin-top: -4em;
+    font-size: 14px;
+    width: 5em;
+    height: 5em
+  }
+  .num_big span {
+    margin-top: calc(5em/2 - 1em);
+  }
+  
+  article {
+    padding: 0 2rem;
+    min-height: 260px;
+  }
+  li article {
+    justify-content: center;
+  }
+  }
+  
+  @media (max-width: 350px) {
+     .footer_group article p {
+      font-size: 12px;
+    }
+    .footer_group article h2 {
+      font-size: 26px;
+    }
+   }
+  
+  @media (min-width: 641px) and (max-width: 960px) {
+    .wrapper {
+      flex-direction: column;
+      align-items: center;
+  }
+    header {
+      justify-content: space-around;
+    }
+    
+    .logo_text {
+    width: 200px;
+    height: 56px;
+    }
+    .logo {
+    margin-top: 40px;
+    width: 130px;
+    height: 130px; 
+    }
+    
+    .logo svg {
+    width: 100px;
+    height: 100px;
+  } 
+    .button span {
+     font-size: 14px;
+     padding: 0.8em;
+    }
+   .footer_group {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      margin-top: 40px;
+    }
+  
+  h1, h2 {
+    font-size: 64px;
+  }
+  header h2 {
+    max-width: 80%;
+  }
+  
+  h4 {
+    font-size: 32px;
+  }
+  
+  h4 span {
+    font-size: 18px;
+  }
+  p {
+    font-size: 18px;
+    font-weight: normal;
+   }
+  
+  footer h2, h3 {
+    font-size: 76px;
+  }
+  
+  footer p {
+    font-size: 36px;
+   }
+   
+  .todo, .todo .container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .todo article {
+    min-height: 320px;
+  }
+  
+  .todo .picture {
+    min-height: 580px;
+  }
+  
+  .todo p {
+    font-size: 24px;
+  }
+  .buttons {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 80%;
+    }
+  .button {
+      width: 48%;
+  }  
+   .buttons svg {
+    width: 45px;
+    height: 45px;
+  } 
+   .athlets:before {
+    position: absolute;
+    z-index: 1;
+    content: "";
+    background: url("https://github.com/natashta/dipom-MQ/blob/master/img/athlete_768.png?raw=true") no-repeat left;
+    width: 100%;
+    height: 780px;
+    margin-top:2rem;
+    }
+    
+    .players:after {
+    position: absolute;
+    z-index: 1;
+    content: "";
+    background: url("https://github.com/natashta/dipom-MQ/blob/master/img/players_768.png?raw=true") no-repeat right;
+    width: 100%;
+    height: 640px;
+    margin-top: 0;
+    }
+  
+  .athlets h3, .athlets article {
+    width: 60%;
+    margin-left: auto;
+  }
+  
+  .athlets h3 {
+    padding-left: 5rem;
+    }
+  
+  .athlets h3, .players h3 {
+    margin-top: 4rem;
+    font-size: 80px;
+  }
+  
+  .players h3, .players article {
+    width: 60%;
+    align-self: flex-start;
+  }
+  .num_big {
+    width: 5em;
+    height: 5em;
+    font-size: 24px;
+    margin-left: 1.5em;
+    margin-top: -3em;
+  }
+  .num_big span {
+    margin-top: calc(5em/2 - 1em);
+  }
+  }
+  
+  @media (min-width: 641px) and (max-width: 790px) {
+    footer p {
+      font-size: 24px;
+    }
+    h2 {
+      font-size: 60px;
+    }
+    footer h2 {
+      font-size: 60px;
+    }
+  }
+  
+  @media (min-width: 961px)  {
+     .wrapper {
+      flex-direction: column;
+      align-items: center;
+  }
+  .container {
+    flex-direction: row;
+    width: 100%;
+  }
+  
+    header {
+      justify-content: space-between;
+    }
+    
+    footer article {
+      width: 80%;
+    }
+   
+    .footer_group {
+      flex-direction: row;
+      width: 80%;
+      justify-content: center;
+      align-content: center;
+    }
+    
+    .logo_text {
+    width: 200px;
+    height: 56px;
+    align-self: center;
+    }
+    .logo {
+    width: 130px;
+    height: 130px;
+    margin-top: auto;
+    }
+    
+    .logo svg {
+    width: 100px;
+    height: 100px;
+  } 
+  .button span {
+     font-size: 14px;
+     padding: 1em;
+  }
+  h1, h2 {
+    font-size: 90px;
+  }
+    h3 {
+    font-size: 76px;
+   } 
+   header h2 {
+    max-width: 80%;
+  }
+  
+  h4 {
+    font-size: 36px;
+  }
+  p {
+    font-size: 20px;
+    padding: 0 20px;
+    font-weight: normal;
+    align-self: center;
+  }
+  
+  footer p {
+    font-size: 30px;
+  }
+  
+  .todo p {
+    font-size: 24px;
+    padding: 0 60px;
+  }
+  .todo h3 {
+    padding: 0 60px;
+  }
+  
+  .buttons {
+      flex-direction: row;
+      justify-content: space-around;
+      width: 58%;
+    }
+    .button {
+      width: 45%;
+  }  
+   .buttons svg {
+    width: 40px;
+    height: 50px;
+  } 
+  .picture, .todo article {
+    width: 50%;
+    min-height: 730px;
+  }
+  
+  .todo article {
+    justify-content: center;
+  }
+  
+   .contact article {
+     order: -2;
+   }
+   .todo {
+     flex-direction: row;
+   }
+    
+    .athlets:before {
+    position: absolute;
+    z-index: 1;
+    content: "";
+    background: url("https://github.com/natashta/dipom-MQ/blob/master/img/athlete_desktop.png?raw=true") no-repeat;
+    width: 60%;
+    height: 1000px;
+    left: 0;
+    }
+    
+    .players:after {
+    position: absolute;
+    z-index: 1;
+    content: "";
+    background: url("https://github.com/natashta/dipom-MQ/blob/master/img/player_desktop.png?raw=true") no-repeat right;
+    width: 100%;
+    height: 780px;
+    right: 0;
+    } 
+    .athlets h3, .athlets article {
+    width: 45%;
+    margin: 20px;
+    margin-left: auto;
+  }
+  
+  .athlets h3 {
+    padding-left: 5rem;
+  }
+  
+  .players h3, .players article {
+    width: 45%;
+    margin: 20px;
+    padding-left: 10rem;
+  }
+     
+    .players h3 {
+     align-self: flex-start;
+    
+  }
+    .athlets h3, .players h3 {
+      margin-top: 80px;
+    } 
+    li {
+      min-height: 260px;
+      align-items: center;
+    }
+    
+  .num_big {
+    font-size: 24px;
+    width: 5.5em;
+    height: 5.5em;
+    margin-left: calc(-5.5*24px/2);
+    margin-top: 25rem;
+  } 
+  .num_big span {
+     margin-top: calc(5.5em/2 - 1em);
+  }
+  
+  .two {
+   order: -1;
+  }
+  
+  .beactive article, .work article, .contact .picture {
+    margin-left: calc(-6*24px/2);
+  }
+    
+  }
+  
+  @media (min-width: 961px) and (max-width: 1130px) {
+    footer h2 {
+      font-size: 64px;
+    }
+      footer p {
+      font-size: 24px;
+    }
+  }  
